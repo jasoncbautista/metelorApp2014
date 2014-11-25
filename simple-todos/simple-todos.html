@@ -6,13 +6,10 @@
 
     <div class="container">
         <ul>
-            {{#each task}}
+            {{#each tasks}}
                 {{> task}}
             {{/each}}
-
-
         </ul>
-
     </div>
 
 
@@ -21,6 +18,9 @@
   {{> hello}}
 </body>
 
+<template name="task">
+    <li> Task Title: {{text}}</li>
+</template>
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>

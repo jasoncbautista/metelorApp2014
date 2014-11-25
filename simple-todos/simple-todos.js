@@ -8,12 +8,16 @@ if (Meteor.isClient) {
     }
 
 
-             ,
-    tasks: [
-          {"text" : "One ---"},
-          {"text" : "Two..."},
-          {"text" : "Three .."}
+  });
+
+
+  Template.body.helpers({
+      tasks: [
+          { "text" : "one"},
+          { "text":  "two"},
+          { "text":  "three"}
       ]
+
   });
 
   Template.hello.events({
