@@ -3,7 +3,20 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+
+    <div class="container">
+        <ul>
+            {{#each task}}
+                {{> task}}
+            {{/each}}
+
+
+        </ul>
+
+    </div>
+
+
+  <h1>Welcome to Meteor !!</h1>
 
   {{> hello}}
 </body>

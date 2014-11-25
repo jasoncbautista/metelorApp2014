@@ -6,6 +6,14 @@ if (Meteor.isClient) {
     counter: function () {
       return Session.get("counter");
     }
+
+
+             ,
+    tasks: [
+          {"text" : "One ---"},
+          {"text" : "Two..."},
+          {"text" : "Three .."}
+      ]
   });
 
   Template.hello.events({
