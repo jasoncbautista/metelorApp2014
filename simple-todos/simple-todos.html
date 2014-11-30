@@ -4,6 +4,13 @@
 
 <body>
 
+    <!-- add a form below the h1 -->
+    <form class="new-task">
+        <input type="text" name="text" placeholder="Type to add new tasks" />
+    </form> 
+
+
+
     <div class="container">
         <ul>
             {{#each tasks}}
@@ -12,10 +19,10 @@
         </ul>
     </div>
 
-
   <h1>Welcome to Meteor !!</h1>
 
   {{> hello}}
+
 </body>
 
 <template name="task">
