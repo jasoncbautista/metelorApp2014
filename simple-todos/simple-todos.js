@@ -47,7 +47,7 @@ Template.body.events({
 });
 
 
-Template.tasks.events({
+Template.task.events({
     "click .delete": function(){
         Tasks.remove(this._id);
     }
