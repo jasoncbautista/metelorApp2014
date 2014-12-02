@@ -16,7 +16,7 @@ if (Meteor.isClient) {
 
   Template.body.helpers({
  tasks: function () {
-      return Tasks.find({}, {sort: {createdAt: -1}});
+      return Tasks.find({}, {sort: {createdAt: 1}});
     }
         
 
@@ -27,7 +27,6 @@ if (Meteor.isClient) {
 
 Template.body.events({
   "submit .new-task": function (event) {
-    debugger;
     // This function is called when the new task form is submitted
 
     var text = event.target.text.value;
@@ -44,6 +43,14 @@ Template.body.events({
     return false;
   }
 
+
+});
+
+
+Template.tasks.events({
+    "click .delete": function(){
+        Tasks.remove(this._id);
+    }
 
 });
   Template.hello.events({
