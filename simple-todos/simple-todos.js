@@ -49,6 +49,7 @@ Template.body.events({
 
 Template.task.events({
     "click .delete": function(){
+    debugger;
         Tasks.remove(this._id);
     }
 
